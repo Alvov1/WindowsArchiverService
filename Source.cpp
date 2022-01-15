@@ -16,13 +16,13 @@
 SERVICE_STATUS serviceStatus;
 SERVICE_STATUS_HANDLE hStatus;
 
-constexpr LPWSTR serviceName = (LPWSTR) TEXT("Archivator Service BSIT");
-constexpr LPWSTR servicePath = (LPWSTR) TEXT("C:/Users/allvo/Desktop/VsProject.exe");
+constexpr LPWSTR serviceName = (LPWSTR) TEXT("Archivator Service");
+constexpr LPWSTR servicePath = (LPWSTR) TEXT("C:/Users/.../Desktop/Project.exe");
 
-constexpr auto logPath = "C:/Users/allvo/Desktop/log.txt";
-constexpr auto configPath = "C:/Users/allvo/Desktop/config.txt";
+constexpr auto logPath = "C:/Users/.../Desktop/log.txt";
+constexpr auto configPath = "C:/Users/.../Desktop/config.txt";
 
-constexpr auto archiveName = "arch.zip";
+constexpr auto archiveName = "Archive.zip";
 
 int addLogMessage(const std::string& str) {
     static auto count = 0;
